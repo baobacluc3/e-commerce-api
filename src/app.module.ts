@@ -12,6 +12,9 @@ import { CartController } from './cart/cart.controller';
 import { CartService } from './cart/cart.service';
 import { CartModule } from './cart/cart.module';
 import { OrdersModule } from './orders/orders.module';
+import { ProductsService } from './products/products.service';
+import { ProductsController } from './products/products.controller';
+import { ProductsModule } from './products/products.module';
 
 @Module({
   imports: [
@@ -38,8 +41,10 @@ import { OrdersModule } from './orders/orders.module';
     CartModule,
 
     OrdersModule,
+
+    ProductsModule,
   ],
-  controllers: [AppController, AuthController, UsersController, CartController],
-  providers: [AppService, AuthService, CartService],
+  controllers: [AppController, AuthController, UsersController, CartController, ProductsController],
+  providers: [AppService, AuthService, CartService, ProductsService],
 })
 export class AppModule {}
