@@ -35,8 +35,6 @@ import { OrdersModule } from './orders/orders.module';
 
     UsersModule,
 
-    UsersModule,
-
     CartModule,
 
     OrdersModule,
